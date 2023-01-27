@@ -1,0 +1,71 @@
+.navbar {
+  display: grid;
+  grid-template-areas:
+    "title name"
+    "search search";
+
+    color: $white;
+}
+
+.navbar__title {
+  grid-area: title;
+
+  margin: 0 0 $gutter*8;
+
+  font-size: 18px;
+  line-height: 22px;
+  color: $white;
+}
+.navbar__name {
+  grid-area: name;
+
+  margin: 0 0 $gutter*8;
+
+  font-size: 18px;
+  line-height: 22px;
+  color: $white;
+  text-align: right;
+}
+.navbar__search {
+  position: relative;
+
+  display: grid;
+  grid-area: search;
+
+  align-items: center;
+  
+  height: 40px;
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+
+  img {
+    position: absolute;
+    left: 10px;
+    
+    width: 16px;
+    height: 16px;
+  }
+
+  input {
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    height: 40px;
+    
+    padding-left: $gutter*8;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $white;
+
+    background: none;
+
+    border: none;
+    outline: none;
+    
+    opacity: 0.5;
+  }
+}

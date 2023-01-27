@@ -1,0 +1,22 @@
+// normalize
+@import "./normalize";
+
+//sources
+@import './source/style';
+
+// componentes
+@import  "./header";
+@import "./navbar";
+@import "./cards";
+
+body {
+  font-family:  $font-primary;
+}
+.main {
+  background: $athensGray;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
